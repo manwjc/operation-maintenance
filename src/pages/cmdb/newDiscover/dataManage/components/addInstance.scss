@@ -1,0 +1,92 @@
+  #test-hot {
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+  }
+
+  .btnIcon {
+    width: 60px;
+    height: 60px;
+    border: 1px dashed #d1dbe5;
+    font-size: 12px;
+    color: #48576a;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .iconDialog .el-dialog__body {
+  }
+
+  .iconDialog .el-tabs {
+  }
+
+  .sysicon {
+    background-color: #1d6aa7;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .sysicon li {
+    padding: 10px;
+  }
+
+  .sysicon li:hover {
+    border-radius: 10px;
+    background: #666;
+  }
+
+  .iconlist {
+    float: left;
+    list-style-type: none;
+    margin: 10px 10px 0px 10px;
+  }
+
+  .item {
+    position: relative;
+    border: 1px solid #CCC;
+    padding: 5px;
+  }
+
+  .title {
+    height: 30px;
+  }
+
+  .item input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 2;
+  }
+
+  .item .ico {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+  }
+
+  .item .ico:after {
+    content: '>';
+  }
+
+  .item input[type=checkbox]:checked + .ico {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+  }
+
+  input[type=checkbox]:checked ~ .content {
+    display: none;
+  }
+
+  .el-breadcrumb {
+    background-color: #fff;
+    padding: 0px 0 0px 10px;
+    border-bottom: 2px solid #f0f0f0;
+    font-size: 14px;
+  }

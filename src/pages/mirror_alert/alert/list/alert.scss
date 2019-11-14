@@ -1,0 +1,36 @@
+
+* ::-webkit-scrollbar {
+  height: 10px !important;
+}
+/deep/ .el-row {
+  margin-bottom: 5px;
+}
+/deep/ .el-row:last-child {
+  margin-bottom: 0px;
+}
+/deep/ .el-table td,/deep/ .el-table th {
+  padding: 1px 0;
+}
+/deep/ .el-col {
+  .el-input__inner {
+    height: 25px !important;
+  }
+}
+/deep/ .el-button--mini,/deep/ .el-button--mini.is-round {
+  padding: 6px 15px;
+}
+.body-container {
+  /deep/ .el-col {
+    padding: 5px 0px 0px 0px;
+    .el-button {
+      margin-left: 0px;
+      padding: 0px 15px 0px 0px;
+    }
+  }
+}
+.table-overflow {
+  width:100%;
+  overflow-x: auto !important;
+  margin-top:5px;
+  border: 1px solid #EBEEF5;
+}

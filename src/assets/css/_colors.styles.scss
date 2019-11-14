@@ -1,0 +1,100 @@
+$default-border-color: #eee;
+
+$even-background-color: #f8f8f8;
+$status-color-success: #72c63d;
+$status-color-error: #fc5d68;
+$status-color-pending: #ffbb00;
+$status-color-in-process: #0badeb;
+$status-color-stopped: #a8a8a8;
+
+/// 基础灰色-浅3
+$m-gray-l3: #F2F2F2;
+/// 基础灰色-浅2
+$m-gray-l2: #EDEDED;
+/// 基础灰色-浅1
+$m-gray-l1: #E5E5E5;
+/// 基础灰色-浅
+$m-gray-l: #F2F2F2;
+/// 基础灰色
+$m-gray: #CCC;
+/// 基础灰色-深1
+$m-gray-d1: #666;
+/// 基础灰色-深2
+$m-gray-d2: #333;
+
+///basic-blue-light1
+$rb-blue-l1: #0BADEB;
+
+///basic-blue-text
+$rb-blue: #428BCA;
+
+// form input
+$form-input-border-color: rgba(34, 36, 38, .15);
+$form-input-focus-border-color: #85B7D9;
+$form-input-invalid-border-color: #E0B4B4;
+$form-input-invalid-background-color: #FFF6F6;
+$form-disabled-background-color: #F0F0F0;
+
+// form label and text
+$form-text-label-color: #333;
+$form-text-help-color: #9c9c9c;
+$form-text-error-color: #C46A69;
+
+// button
+$button-default-text-color: #464646;
+$button-default-border-color: #ddd;
+$button-default-background-color: #fff;
+
+$button-default-hover-border-color: #cfcfcf;
+$button-default-hover-background-color: #e6e6e6;
+
+$button-default-active-border-color: #B9B9B9;
+$button-default-active-background-color: #CECECE;
+
+$button-primary-text-color: #fff;
+$button-primary-border-color: #24A7E3;
+$button-primary-background-color: #24A7E3;
+
+$button-primary-active-border-color: #1583B4;
+$button-primary-active-background-color: #1583B4;
+
+$button-primary-hover-border-color: #1892c9;
+$button-primary-hover-background-color: #1892c9;
+
+$button-secondary-text-color: #fff;
+$button-secondary-border-color: #89969b;
+$button-secondary-background-color: #89969b;
+
+$button-secondary-hover-border-color: #6E7F85;
+$button-secondary-hover-background-color: #6E7F85;
+
+$button-secondary-active-border-color: #5D6C71;
+$button-secondary-active-background-color: #5D6C71;
+
+// popover
+$popover-border-color: #60d3ff;
+$popover-background-color: #f6fdff;
+
+$popover-success-border-color: #72C63D;
+$popover-success-background-color: #F7FFF3;
+
+$popover-warnning-border-color: #FFBB00;
+$popover-warnning-background-color: #FFFBF1;
+
+$popover-error-border-color: #fc5d68;
+$popover-error-background-color: #FFF6F6;
+
+///basic-blue-shadow
+$rb-blue-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.14);
+$rb-gray-bold-shadow: 0px 0px 10px 0px #c4c4c4;
+$rb-gray-light-shadow: 0px 0px 2px 0px rgba(0,0,0,0.14);
+
+// repository tag level color
+$repository-tag-level-high-color: #fc5d68;
+$repository-tag-level-medium-color: #f79032;
+$repository-tag-level-low-color: #ffbb00;
+$repository-tag-level-negligible-color: #a8a8a8;
+$repository-tag-level-unknown-color: #a8a8a8;
+$repository-tag-level-security-color: #72c63d;
+
+$popover-error-border-color: #fc5d68;

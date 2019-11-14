@@ -1,0 +1,8 @@
+@import './variable';
+
+// 混合
+@mixin main-card-shadow {
+  box-shadow: $main-box-shadow;
+  border-radius: 16px;
+  background: #fff;
+}

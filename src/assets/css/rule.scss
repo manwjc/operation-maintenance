@@ -1,0 +1,56 @@
+/*样式规则*/
+/*颜色*/
+$color-normal: #333;
+$color-base: #fff;
+$color-bg:#FAFAFC;
+$color-common: #666;
+$color-border: #DCDFE6;
+$color-remarks: #aaa;
+
+$color-link: #269BE0;
+$color-link-dark: #2f8abf;
+$color-link-light: #ecf5ff;
+
+$color-tip-red: #FF1C5C;
+$color-tip-orange: #ff8813;
+$color-tip-yellow: #ffeb6f;
+$color-tip-blue-light: #52C4FF;
+$color-tip-blue: #21AEFF;
+$color-tip-blue-dark: #2f8abf;
+
+$color-tip-green: #17C8AD;
+$color-tip-purple: #876EFF;
+
+$color-blue:#051c53;
+$color-blue-xs:#92b4e9;
+$color-blue-bright-xs:#0b5bb5;
+
+/*自适应大小*/
+@function rem($px) {
+  @return $px / 192 * 1rem
+}
+
+;
+
+/*字体大小*/
+$font-12:rem(12);
+$font-14:rem(14);
+$font-16:rem(16);
+$font-18:rem(18);
+$font-20:rem(20);
+$font-24:rem(24);
+$font-30:rem(30);
+
+/*其他*/
+$font-size:12px;
+$border-radius:6px;
+$height-base:26px;
+$width-base:178px;
+
+@mixin input-base {
+  height: $height-base;
+  line-height: $height-base;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  font-size: $font-size;
+}

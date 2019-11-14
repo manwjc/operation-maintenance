@@ -1,0 +1,361 @@
+/** 深色主题 **/
+$color-blue-light-xs:#CAF4FF;
+$color-blue-light: #82C6FF;
+$color-blue-light-md:#84E3FF;
+$color-blue-light-lg:#1690ED;
+$color-blue: #0073D5;
+
+$color-blue-dark-xs:#0B4D77;
+$color-blue-dark-md:#1648A5;
+$color-blue-dark: #002a66;
+$color-blue-dark-lg: #232b51;
+
+$color-blue-bright:#006CFF;
+$color-blue-bright-md:#004CD8;
+$color-blue-bright-xs:#0b5bb5;
+
+$color-black: #000;
+
+$color-green-xs:#EBFFCB;
+$color-green:#72BB00;
+$color-green-md:#4B7600;
+
+$color-purple-xs:#DFD7FF;
+$color-purple:#CD2BFC;
+$color-purple-md:#8207FF;
+
+$color-red-xs:#FF0090;
+$color-red:#FF1536;
+
+$color-orange-xs:#FF8400;
+$color-orange:#E24E1A;
+
+$color-yellow-xs:#F3FF2F;
+$color-yellow:#F6BF00;
+
+
+
+
+//定制化首页
+
+.container-view {
+  background: url(img/mapindex-bg.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  .component-condition {
+    .el-radio-group {
+      &.yw-separate-button-wrap {
+        .el-radio-button {
+          .el-radio-button__inner {
+            background: transparent;
+            color: $color-blue-light;
+          }
+
+          &.is-active {
+            .el-radio-button__inner {
+              background: linear-gradient(0deg, rgba(60, 2, 226, 1), rgba(0, 60, 230, 1));
+              border-radius: 2px;
+              color: $color-base;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .component-edit-button {
+    background: $color-blue;
+    color: $color-base;
+
+    &:hover {
+      background: $color-link;
+    }
+  }
+}
+
+//图表
+.content-chart {
+  .chart-title-wrap {
+    background: url(img/chart-title.png) no-repeat;
+    background-size: 100% 100%;
+
+    .chart-icon {
+      display: inline-block;
+      vertical-align: middle;
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+
+      &.icon-rate {
+        background: url(img/flag-rate.png) no-repeat;
+      }
+    }
+
+    .chart-title {
+      color: $color-blue-light-xs;
+    }
+
+
+  }
+
+  .chart-section {
+    background: url(img/chart-content.png) no-repeat;
+    background-size: 100% 100%;
+
+    .chart-box-wrap {
+      .chart-box-item {
+        &+.chart-box-item {
+          &:before {
+            background: $color-blue-dark-xs;
+          }
+        }
+      }
+    }
+  }
+}
+
+//时间
+.el-date-editor {
+  &.yw-date-editor {
+    &.el-input__inner {
+
+      background: transparent;
+      border: 1px solid rgba(130, 198, 255, 1);
+
+      .el-range-input {
+        background: transparent;
+        color: $color-base;
+      }
+
+      .el-range-separator {
+        color: $color-blue-light;
+      }
+
+      .el-input__icon {
+        color: $color-blue-light;
+      }
+
+      .el-icon-date {
+        width: auto;
+
+        &:before {
+          display: inline-block;
+          content: '选择时间范围';
+          word-break: keep-all;
+        }
+      }
+    }
+  }
+}
+
+//单选按钮
+.el-radio-group {
+  &.yw-radio-button-wrap {
+    .el-radio-button {
+      .el-radio-button__inner {
+        background: $color-blue-dark;
+        color: $color-blue-light-md;
+        border: 1px solid $color-blue-light-md;
+      }
+
+      &.is-active {
+        .el-radio-button__inner {
+          background: $color-blue-light-md;
+          color: $color-black;
+        }
+      }
+    }
+
+  }
+}
+
+//vue-tree
+.yw-treeselect.vue-treeselect {
+  .vue-treeselect__control {
+    background: transparent;
+    border: 1px solid $color-blue-light-md;
+
+    .vue-treeselect__placeholder {
+      color: $color-base;
+    }
+  }
+}
+
+//table
+.yw-rank-table {
+  &.el-table {
+    border: 1px solid $color-blue-light-md;
+    color: $color-base;
+
+    &:before {
+      display: none;
+    }
+
+    thead {
+      color: $color-base;
+
+      th {
+        background: #1648A5;
+        font-size: $font-16;
+        padding: 6px 0;
+
+        &.is-leaf {
+          border: none;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          font-size: $font-14;
+          border: none;
+          padding: 5px 0;
+        }
+
+        &:nth-child(odd) {
+          background: $color-black;
+        }
+
+        &:nth-child(even) {
+          background: $color-blue-dark;
+        }
+
+        &:hover {
+          &>td {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+//进度条
+.yw-progress {
+  .el-progress {
+    .el-progress-bar__outer {
+      background: $color-blue-dark-lg;
+    }
+
+    .el-progress-bar__inner {
+      background: -webkit-linear-gradient(left, $color-blue-light-md, $color-blue);
+      background: linear-gradient(left, $color-blue-light-md, $color-blue);
+    }
+
+    .el-progress__text {
+      color: $color-base;
+    }
+
+    &.text-inside {
+      .el-progress-bar__inner {
+        background: -webkit-linear-gradient(left, $color-blue-bright-md, $color-blue-bright);
+        background: linear-gradient(left, $color-blue-bright-md, $color-blue-bright);
+      }
+    }
+
+    &.green {
+      .el-progress-bar__inner {
+        background: -webkit-linear-gradient(left, $color-green-md, $color-green);
+        background: linear-gradient(left, $color-green-md, $color-green);
+      }
+    }
+
+    &.purple {
+      .el-progress-bar__inner {
+        background: -webkit-linear-gradient(left, $color-purple-md, $color-purple);
+        background: linear-gradient(left, $color-purple-md, $color-purple);
+      }
+    }
+
+    &.red {
+      .el-progress-bar__inner {
+        background: -webkit-linear-gradient(left, $color-red-xs, $color-red);
+        background: linear-gradient(left, $color-red-xs, $color-red);
+      }
+
+      .el-progress__text {
+        color: $color-red;
+      }
+    }
+
+    &.orange {
+      .el-progress-bar__inner {
+        background: -webkit-linear-gradient(left, $color-orange-xs, $color-orange);
+        background: linear-gradient(left, $color-orange-xs, $color-orange);
+      }
+
+      .el-progress__text {
+        color: $color-orange-xs;
+      }
+    }
+
+    &.yellow {
+      .el-progress-bar__inner {
+        background: -webkit-linear-gradient(left, $color-yellow-xs, $color-yellow);
+        background: linear-gradient(left, $color-yellow-xs, $color-yellow);
+      }
+
+      .el-progress__text {
+        color: $color-yellow;
+      }
+    }
+  }
+
+
+  .progress-text {
+    color: $color-blue-light-xs;
+
+    &.green {
+      color: $color-green-xs;
+    }
+
+    &.purple {
+      color: $color-purple-xs;
+    }
+
+  }
+}
+
+//排行榜
+.progress-rank-wrap {
+  .progress-rank-header {
+
+    &:before,
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 12px;
+      background: url(img/slash-blue.png) no-repeat;
+    }
+
+    &.green:before,
+    &.green:after {
+      background: url(img/slash-green.png) no-repeat;
+    }
+
+    &.purple:before,
+    &.purple:after {
+      background: url(img/slash-purple.png) no-repeat;
+    }
+
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+//滚动条
+.el-scrollbar {
+  &.yw-scrollbar {
+    &.dark {
+      .el-scrollbar__thumb {
+        background: $color-blue-bright-xs;
+      }
+    }
+
+  }
+}

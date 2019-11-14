@@ -1,0 +1,76 @@
+body {
+  font-family: MicrosoftYaHei;
+}
+.confirm-add-permission {
+  width:89px;
+  height:34px;
+  background:#46BAFE;
+  border-radius: 3px;
+  font-size:14px;
+  line-height: 0px;
+  padding: 12px 20px 12px 20px;
+}
+.cancel-add-permission {
+  width:60px;
+  height:34px;
+  background:#FFFFFF;
+  border-radius: 3px;
+  line-height: 0px;
+  padding: 0px;
+}
+
+.create-role {
+  width:60px;
+  height:34px;
+  background: #46BAFE 100%;
+  border-radius: 3px;
+  line-height: 0px;
+  padding: 0px;
+}
+
+.add-permission-dialog {
+  display: block;
+}
+
+.add-group-range {
+  margin-top: 10px;
+}
+// 添加一组约束按钮
+.add-one-group-constraint {
+  width:110px;
+  height:24px;
+  background:#FFFFFF;
+  border-radius: 3px;
+  line-height: 0px;
+  padding: 0px;
+}
+
+.showConstraint {
+  width:45px;
+  height:20px;
+  background:#FFFFFF;
+  border-radius: 3px;
+  line-height: 0px;
+  padding: 0px;
+  margin-left: 10px;
+}
+
+.add-constraint-group-item {
+  margin-top: 10px;
+}
+
+.demo-rangs {
+  border-radius: 3px;
+}
+
+.list-demo-range {
+  margin: 0px 10px 10px 10px;
+}
+
+.con-is-view {
+  margin-left: 15px;
+}
+
+.row-col-rource-constraint {
+  box-shadow:0 0 15px gainsboro;
+}

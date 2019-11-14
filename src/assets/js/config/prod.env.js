@@ -1,0 +1,28 @@
+'use strict'
+module.exports = {
+  NODE_ENV: '"production"',
+  PORT: 8080,
+  // API_SERVER_URL: 'http://10.181.12.112:5566',
+  // API_SERVER_URL: 'http://10.181.12.121:30003',
+  // API_SERVER_URL: 'http://10.1.123.49:8129',
+  // API_SERVER_URL: 'http://10.12.8.191:8129',
+  // API_SERVER_URL: 'http://10.12.70.39:29090',
+  API_SERVER_URL: 'http://10.12.70.39:5566',
+  BIZ_LOG_URL: 'http://10.181.12.121:30056',
+  REALM: 'demo_realm',
+  // CMDB_SERVER_URL: 'http://10.12.9.238:2222',
+  CMDB_SERVER_URL: 'http://10.12.70.39:2222',
+  FTP_SERVER_URL: 'http://10.12.12.139:59090',
+  // AUTH_SERVER_URL: 'http://10.12.70.38:8180/auth',
+  AUTH_SERVER_URL: 'https://10.12.70.40:28180/auth/',
+  // AUTH_SERVER_URL: 'http://10.1.5.104:8180/auth',
+  // AUTH_SERVER_URL: 'http://10.1.5.104:8080/auth',
+  BPMX_SERVER_URL: 'http://10.12.9.238:8081/front/home',
+  GRAFANA_SERVER_URL: 'http://10.12.70.41:3000',
+  DEVELOP_HELP_SERVER_URL: 'http://10.12.9.232:4044',
+  RESOURCE_SERVER_URL: 'http://10.12.70.39:2223',
+  SSL_REQUIRED: 'external',
+  RESOURCE: 'prod_vue',
+  PUBLIC_CLIENT: true,
+  OPERATE_SERVER_URL: 'http://117.132.183.206:8075'
+}

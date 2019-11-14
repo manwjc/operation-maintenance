@@ -1,0 +1,194 @@
+@import "src/assets/css/_colors.styles.scss";
+@mixin status-legend-icon($color) {
+  content: '';
+  display: block;
+  height: 8px;
+  width: 8px;
+  background-color: $color;
+  margin-right: 5px;
+}
+.rb-event-list {
+  min-height: 160px;
+  .rb-event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    .rb-legend-list {
+      display: flex;
+      .rb-legend-item {
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+        &.success:before {
+          @include status-legend-icon($status-color-success);
+        }
+        &.error:before {
+          @include status-legend-icon($status-color-error);
+        }
+        &.pending:before {
+          @include status-legend-icon($status-color-pending);
+        }
+        &.in-progress:before {
+          @include status-legend-icon($status-color-in-process);
+        }
+      }
+    }
+    .rb-form {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      .margin-right-2 {
+        margin-right: 8px;
+        line-height: 30px;
+      }
+    }
+  }
+  .rb-event-list {
+    overflow: visible;
+    padding: 0;
+    border: 1px solid #eee;
+    li {
+      list-style: none;
+
+
+      > div {
+        padding: 8px;
+      }
+
+      &:nth-of-type(odd) {
+        background-color: #fff;
+      }
+      &:nth-of-type(even) {
+        background-color: #f8f8f8;
+      }
+      &:hover {
+        background-color: #eff5f8;
+      }
+      pre {
+        background-color: transparent;
+        border: none !important;
+        padding: 8px;
+        white-space: pre-wrap;
+      }
+      .item-detail-icon {
+        float: right;
+        font-size: 14px;
+        height: 20px;
+        line-height: 20px;
+      }
+      .item-message-icon {
+        margin-left: 5px;
+      }
+      .popover {
+        color: #000;
+        border-width: 1px;
+        border-style: solid;
+        word-break: break-all;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+        .popover-content {
+          max-width: 600px;
+        }
+      }
+      &.rb-popover-success {
+        border-left: 4px solid $popover-success-border-color;
+        .item-message-icon {
+          color: $popover-success-border-color;
+        }
+      }
+      &.rb-popover-warnning {
+        border-left: 4px solid $popover-warnning-border-color;
+        .item-message-icon {
+          color: $popover-warnning-border-color;
+        }
+      }
+      &.rb-popover-error {
+        border-left: 4px solid $popover-error-border-color;
+        .item-message-icon {
+          color: $popover-error-border-color;
+        }
+      }
+    }
+  }
+  .rb-event-list {
+    overflow: visible;
+    padding: 0;
+    border: 1px solid #eee;
+    li {
+      list-style: none;
+
+
+      > div {
+        padding: 8px;
+      }
+
+      &:nth-of-type(odd) {
+        background-color: #fff;
+      }
+      &:nth-of-type(even) {
+        background-color: #f8f8f8;
+      }
+      &:hover {
+        background-color: #eff5f8;
+      }
+      pre {
+        background-color: transparent;
+        border: none !important;
+        padding: 8px;
+        white-space: pre-wrap;
+      }
+      .item-detail-icon {
+        float: right;
+        font-size: 14px;
+        height: 20px;
+        line-height: 20px;
+      }
+      .item-message-icon {
+        margin-left: 5px;
+      }
+      .popover {
+        color: #000;
+        border-width: 1px;
+        border-style: solid;
+        word-break: break-all;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+        .popover-content {
+          max-width: 600px;
+        }
+      }
+      &.rb-popover-success {
+        border-left: 4px solid $popover-success-border-color;
+        .item-message-icon {
+          color: $popover-success-border-color;
+        }
+      }
+      &.rb-popover-warnning {
+        border-left: 4px solid $popover-warnning-border-color;
+        .item-message-icon {
+          color: $popover-warnning-border-color;
+        }
+      }
+      &.rb-popover-error {
+        border-left: 4px solid $popover-error-border-color;
+        .item-message-icon {
+          color: $popover-error-border-color;
+        }
+      }
+    }
+  }
+  .rb-event-not-found {
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+    ul > li {
+      list-style: disc;
+      min-height: 36px;
+      line-height: 36px;
+      pre {
+        border: none;
+        background-color: transparent;
+      }
+    }
+  }
+}

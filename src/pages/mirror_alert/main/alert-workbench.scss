@@ -1,0 +1,140 @@
+@mixin bg-color($color) {
+  background-color: $color;
+}
+.el-row {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.el-col {
+  border-radius: 4px;
+}
+.bg-purple-dark {
+  background: #99a9bf;
+}
+.bg-purple {
+  background: #d3dce6;
+}
+.bg-purple-light {
+  background: #e5e9f2;
+}
+.grid-content {
+  border-radius: 4px;
+  min-height: 36px;
+  text-align: center;
+}
+.row-bg {
+  padding: 10px 0;
+  background-color: #f9fafc;
+}
+.grid-content-info {
+  position: relative;
+  background-color: #fff;
+  min-width: 330px;
+  min-height: 328px;
+  //order: 1px solid #f0f0f0;
+}
+.text {
+  font-size: 14px;
+}
+.el-progress-bar {
+  padding-right: 30px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.item {
+  width: 100%;
+  height: 300px;
+  &.xtra {
+    padding-left: 10px;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both
+}
+.clearfix {
+  height: 18px;
+}
+.el-card__header {
+  padding: 10px 10px 10px 15px;
+  background-color: #f4f4f4;
+  font-weight: 600;
+}
+.box-card {
+  width: 100%;
+  min-height: 328px;
+}
+.el-card__body {
+  padding: 0px;
+}
+.circle{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-left: calc(50% - 4px);
+  &.red {
+    //@include bg-color(red);
+    background-color: #FF0036;
+  }
+  &.orange {
+    //@include bg-color(orange);
+    background-color: #FF7E00;
+  }
+  &.yellow {
+    //@include bg-color(yellow);
+    background-color: #FFBA00;
+  }
+  &.blue {
+    //@include bg-color(blue);
+    background-color: #38B9EC;
+  }
+  &.green {
+    //@include bg-color(green);
+    background-color: #4CDD1F;
+  }
+}
+.el-progress__text{
+  display: none
+}
+.levelDate{
+  float: right;
+  padding: 3px 8px;
+  border-radius: 16px;
+}
+.levelDateSelect{
+  float: right;
+  padding: 3px 8px;
+  &.el-button--text {
+    color: #fff;
+    background-color: #409EFF;
+    border-radius: 10px;
+  }
+  &:hover {
+    background-color: #409EFF;
+  }
+}
+.noData {
+  background-color: #FFFFFF;text-align: center;width: 100%;height: 100%;line-height: 300px
+}
+.el-card.is-always-shadow,
+.el-card.is-hover-shadow:focus, .el-card.is-hover-shadow:hover {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+}
+.alert-sum img {
+  margin-top: -6px;
+  margin-bottom: 5px;
+}
+.alert-sum .link-sum .el-col {
+  text-align: center;
+  margin-top: -2px;
+}
